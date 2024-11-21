@@ -1,0 +1,53 @@
+<map version="1.0.1">
+<!-- To view this file, download free mind mapping software FreeMind from http://freemind.sourceforge.net -->
+<node CREATED="1726062932738" ID="ID_598371148" MODIFIED="1726063862068" TEXT="Home">
+<icon BUILTIN="gohome"/>
+<hook NAME="accessories/plugins/CreationModificationPlugin_new.properties"/>
+<node CREATED="1726062963365" ID="ID_637969525" MODIFIED="1726063133224" POSITION="right" TEXT="Fr">
+<node CREATED="1726063000103" ID="ID_946156320" MODIFIED="1726063943816" TEXT="moi-je">
+<icon BUILTIN="ksmiletris"/>
+</node>
+<node CREATED="1726063136883" ID="ID_1147511105" MODIFIED="1726063905714" TEXT="parcours">
+<icon BUILTIN="list"/>
+<node CREATED="1726063153015" ID="ID_1746655599" MODIFIED="1726063913332" TEXT="Etudes">
+<icon BUILTIN="pencil"/>
+</node>
+<node CREATED="1726063161830" ID="ID_1436418835" MODIFIED="1726063927105" TEXT="Jobs">
+<icon BUILTIN="idea"/>
+</node>
+</node>
+<node CREATED="1726063202650" ID="ID_1573055314" MODIFIED="1726063885392" TEXT="portfolio">
+<icon BUILTIN="folder"/>
+</node>
+<node CREATED="1726063275408" ID="ID_576025960" MODIFIED="1726063867753" TEXT="contact">
+<icon BUILTIN="Mail"/>
+</node>
+</node>
+<node CREATED="1726062973622" ID="ID_1550222103" MODIFIED="1726062977862" POSITION="left" TEXT="En">
+<node CREATED="1726063286244" ID="ID_232746955" MODIFIED="1726063979717" TEXT="me">
+<icon BUILTIN="ksmiletris"/>
+</node>
+<node CREATED="1726063370538" ID="ID_1993623887" MODIFIED="1726063988133" TEXT="journey">
+<icon BUILTIN="list"/>
+<node CREATED="1726063409024" ID="ID_1156505618" MODIFIED="1726063992564" TEXT="studies">
+<icon BUILTIN="pencil"/>
+</node>
+<node CREATED="1726063426071" ID="ID_769897021" MODIFIED="1726063997982" TEXT="jobs">
+<icon BUILTIN="idea"/>
+</node>
+</node>
+<node CREATED="1726063382477" ID="ID_1817134473" MODIFIED="1726064006429" TEXT="portfolio">
+<icon BUILTIN="folder"/>
+</node>
+<node CREATED="1726063392435" ID="ID_67031573" MODIFIED="1726064010466" TEXT="contact">
+<icon BUILTIN="Mail"/>
+</node>
+</node>
+<node CREATED="1726063725063" HGAP="-20" ID="ID_1121357195" MODIFIED="1726063964419" POSITION="right" TEXT="CV.pdf" VSHIFT="43">
+<icon BUILTIN="female2"/>
+</node>
+<node CREATED="1726063758546" HGAP="-28" ID="ID_1002779065" MODIFIED="1726064035260" POSITION="left" TEXT="r&#xe9;seaux sociaux" VSHIFT="43">
+<icon BUILTIN="xmag"/>
+</node>
+</node>
+</map>

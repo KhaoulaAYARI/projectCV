@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Cavolini';
+    src: url('fonts/CAVOLINI.TTF') format('woff2'),
+         url('fonts/CAVOLINIBOLD.TTF') format('woff'),
+         url('fonts/CAVOLINIBOLDITALIC.TTF') format('truetype'),
+         url('fonts/CAVOLINIITALIC.TTF') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cascadia Code';
+    src: url('fonts/Cascadia.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+    font-family: Cavolini;
+    
+}
+img{
+    display: flex;
+    width: 100%;
+}
+.section1 h1{
+font-size: 425%;
+color: #fff;
+}
+h1{
+    font-family: Cascadia Code;
+}
+h2{
+    font-family: Cascadia Code;
+}
+h3{
+    font-family: Cascadia Code;
+}
+.container{
+    flex-direction: column;
+    margin : 0 auto;
+}
+
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+   
+    background-color:  #E59934;
+    
+}
+
+ main, footer,section{
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer{
+    background-color: #E59934;
+    color: #fff;
+}
+
+header{
+    flex-direction: column;
+}
+
+
+
+
+nav a, aside a{
+    text-decoration: none;
+    color : #fff;
+    transition: all 0.5s;
+}
+
+nav a:hover{
+    color: #753188;
+    font-weight: bold;
+}
+section{
+    flex-direction: column;
+}
+.section1 {
+    flex-direction: column;
+    background-image: url("img/img1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+h1 h2 h3{
+    font-family: cavolini;
+}
+footer{
+    justify-content: center;
+}
+
+.site-header {
+    color: #753188;;
+    height: 100%;
+    background-color: #753188;
+   
+    
+    background-repeat: no-repeat;
+}
+/* ///////////////20-11-2024/////////////
+le video est effacée de youtube de la partie experience et formation
+donc je colle le code originale ici et j'essaye de corriger avec chatgpt */
+
+/* .section_parcours h1{
+    color: white;
+    font-weight: 700;
+    margin-top: 125px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 23px;
+  }
+  .process_wrapper{
+    margin: auto;
+    max-width: 1080px;
+  }
+  #exp_progress_bar_container{
+    position:relative;
+    width: 90%;
+    margin: auto;
+    height: 100px;
+    margin-top: 59px;
+  }
+  #exp_progress_bar_container ul{
+    padding: 0%;
+    margin: 0;
+    padding-top: 15px;
+    z-index: 9999;
+    position: absolute;
+    width:100%;
+    margin-top: -40px;
+  }
+  #exp_progress_bar_container li:before{
+    content: "";
+    display: block;
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 2px black;
+    transition: all ease 0.3s;
+  }
+  #exp_progress_bar_container li.active:before,
+  #exp_progress_bar_container li:hover::before{
+    background: #753188;
+  }
+  #exp_progress_bar_container li {
+    list-style: none;
+    float:left;
+    width: 20%;
+    text-align: center;
+    color: #66b23b;
+    text-transform: uppercase;
+    font-size: 11px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all ease 0.25s;
+    vertical-align: bottom;
+    height: 59px;
+    position: relative;
+  }
+  #exp_progress_bar_container li .step_inner{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    font-size: 14px;
+  }
+  #exp_progress_bar_container li.active, #exp_progress_bar_container li:hover{
+    color: #e91e63;
+  }
+  #exp_progress_bar_container li:after {
+    content: "";
+    display: block;
+    width:5px ;
+    background: #777;
+    margin: auto;
+    border: solid 7px orangered;
+    border-radius: 50%;
+    margin-top: 40px;
+    box-shadow: 0 2px 13px -1px rgba(0,0,0,0.3);
+    transition: all ease 0.2s;
+  }
+  #exp_progress_bar_container li:hover::after{
+    background:palevioletred ;
+  }
+  #exp_progress_bar_container li:active:after{
+    background:palevioletred ;
+  }
+  #exp_progress_bar_container #line{
+    width: 80%;
+    margin: auto;
+    background:orangered;
+    height: 5px;
+    position: absolute;
+    left: 10%;
+    top: 57px;
+    z-index: 1;
+    border-radius: 50px;
+    transition: all ease 0.9s;
+  }
+  #exp_progress_bar_container #line_process{
+    content: "";
+    width: 3%;
+    height: 100%;
+    background: #753188;
+    background: linear-gradient(to right, deepskyblue 0% #e91e63 100%);
+    z-index: 2;
+    border-radius: 50px;
+    transition: all ease 0.95s;
+    }
+#progress_content_section{
+    width: 90%;
+    margin: auto;
+    background:#f3f3f3 ;
+    border-radius: 4px;
+}
+#progress_content_section .section_content{
+    padding: 30px 40px;
+    text-align: center;
+
+} */
+
