@@ -1,0 +1,259 @@
+/*  Code chatGPT 23_11_2024
+Section générale pour les expériences */
+.section_experiences {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #f8f9fa, #e1e8ed);
+    overflow: hidden;
+}
+
+/* Swiper Container (Général) */
+.swiper-container {
+    width: 100%;
+    max-width: 900px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* Swiper Slide pour Coverflow */
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    max-width: 80%;
+    background: #ecd1ff;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: blur(4px);
+}
+
+/* Slide actif */
+.swiper-slide-active {
+    filter: blur(0);
+    background: #fff;
+    transform: scale(1.05);
+}
+
+/* Testbox pour contenu des slides */
+.testbox {
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+
+.testbox h4 {
+    font-size: 1.5rem;
+    color: #753188;
+    margin-bottom: 10px;
+}
+
+.testbox p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Détails et image des expériences */
+.testbox .details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.testbox .details .imgBox {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testbox .details .imgBox img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.testbox .details .imgBox:hover img {
+    transform: scale(1.1);
+}
+
+/* Swiper Cards spécifique */
+.cards-swiper {
+    margin-top: 50px;
+}
+
+.cards-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background: #753188;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation de la carte active */
+.cards-swiper .swiper-slide-active {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Cacher les ombres inutiles pour swiper 3D */
+.swiper-3d .swiper-slide-shadow-left, 
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}
+
+/* Réglages responsive */
+@media screen and (max-width: 768px) {
+    .swiper-slide {
+        width: 90%;
+    }
+
+    .cards-swiper .swiper-slide {
+        width: 80%;
+        height: 180px;
+    }
+
+    .testbox h4 {
+        font-size: 1.2rem;
+    }
+
+    .testbox p {
+        font-size: 0.9rem;
+    }
+}
+
+
+ancien code de test_1
+.section_experiences{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .swiper-container{
+    width: 100%;
+    max-width: 900px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 600px;
+    max-width: 80%;
+    background: #ecd1ff;
+    box-shadow: 0 15px 50px rgba(0,0,0,.2);
+    filter: blur(4px);
+    border-radius: 10px;
+  }
+  .swiper-slide-active{
+    filter: blur(0);
+    background: #fff;
+  }
+  .testbox{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #999;
+  }
+  .testbox .quote{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity:0.2;
+  }
+  .testbox .details{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .testbox .details .imgBox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  .testbox .details .imgBox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+.testbox .details h3 span{
+    font-size: 12px;
+    color: black;
+}
+.swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right  {
+    background-image: none;
+}
+* Swiper Cards spécifique */
+.cards-swiper {
+    margin-top: 50px;
+}
+
+.cards-swiper .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    background: #753188;
+    border-radius: 15px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Animation de la carte active */
+.cards-swiper .swiper-slide-active {
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* Cacher les ombres inutiles pour swiper 3D */
+.swiper-3d .swiper-slide-shadow-left, 
+.swiper-3d .swiper-slide-shadow-right {
+    background-image: none;
+}

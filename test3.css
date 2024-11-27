@@ -275,7 +275,100 @@ Code CSS Responsive pour max-width: 640px : */
     font-size: 4rem; /* Sous-titres également agrandis */
     line-height: 5rem;
 }
+/* ///////////////////////// */
 
+/* .section_experiences{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .swiper-container{
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .swiper-slide{
+    background-position: center;
+    background-size: cover;
+    width: 60px;
+    background: #ecd1ff;
+    box-shadow: 0 15px 50px rgba(0,0,0,.2);
+    /* filter: blur(4px); */
+    border-radius: 10px;
+  }
+  .swiper-slide-active{
+    /* filter: blur(0); */
+    background: #fff;
+  }
+  .testbox{
+    position: relative;
+    width: 100%;
+    padding: 40px;
+    padding-top: 90px;
+    color: #999;
+  }
+  .testbox .quote{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    opacity:0.2;
+  }
+  .testbox .details{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .testbox .details .imgBox{
+    position: relative;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  .testbox .details .imgBox img{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+ 
+.testbox .details h3 span{
+    font-size: 12px;
+    color: black;
+}
+.swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right  {
+    background-image: none;
+}
+
+  .process_wrapper{
+    margin: auto;
+    max-width: 1080px;
+  }
+  /* ////////////////// */
+  .swiper-container {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+  } */
+  
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    background: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 /* MEDIA QUERY POUR SCREENS > 1024px */
 @media (min-width: 1024px) {
     .arraw {

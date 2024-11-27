@@ -32,90 +32,123 @@ ScrollReveal().reveal(".header_content .p2", {
     ...scrollReavalOption,
     delay: 1500,
 });
+ScrollReveal().reveal(".experiences_content h2", {
+    ...scrollReavalOption,
+    origin: "right",
+});
 
 
-ScrollReveal().reveal(".card_1", {
-    ...scrollReavalOption,
-    delay: 3000,
-});
-ScrollReveal().reveal(".card_2", {
-    ...scrollReavalOption,
-    delay: 2500,
-});
-ScrollReveal().reveal(".card_3", {
-    ...scrollReavalOption,
-    delay: 2000,
-});
-ScrollReveal().reveal(".card_4", {
-    ...scrollReavalOption,
-    delay: 1500,
-});
-ScrollReveal().reveal(".card_5", {
-    ...scrollReavalOption,
-    delay: 1000,
-});
+
 
 
     
 
-    document.addEventListener("DOMContentLoaded", function () {
-        const steps = document.querySelectorAll("#exp_progress_bar_container li");
-        const lineProcess = document.querySelector("#line_process");
-        const contents = document.querySelectorAll("#progress_content_section .section_content");
 
-        steps.forEach((step, index) => {
-            step.addEventListener("click", function () {
-                // Mettre à jour les cercles et la barre de progression
-                updateProgress(index);
-
-                // Afficher uniquement le contenu correspondant
-                showContent(index);
-            });
-        });
-
-        function updateProgress(activeIndex) {
-            // Met à jour les cercles
-            steps.forEach((step, index) => {
-                if (index <= activeIndex) {
-                    step.classList.add("active"); // Activer les cercles précédents et le cercle courant
-                } else {
-                    step.classList.remove("active"); // Désactiver les cercles suivants
-                }
-            });
-
-            // Met à jour la largeur de la barre
-            const width = ((activeIndex + 1) / steps.length) * 100;
-            lineProcess.style.width = `${width}%`;
-
-            // Couleur fixe pour la barre de progression
-            lineProcess.style.background = "#753188";
-        }
-
-        function showContent(activeIndex) {
-            // Masquer tous les contenus
-            contents.forEach(content => {
-                content.classList.remove("active");
-            });
-
-            // Afficher uniquement le contenu correspondant
-            contents[activeIndex].classList.add("active");
-        }
+document.addEventListener("DOMContentLoaded", () => {
+    // Swiper Coverflow
+    var swiperCoverflow = new Swiper(".coverflow-swiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 100,
+            modifier: 2,
+            slideShadows: true,
+        },
+        loop: true,
     });
+});
 
-    var swiper = new Swiper(".swiper-container", {
-      effect: "coverflow",
+  //SECTION PROJETS
+  document.addEventListener("DOMContentLoaded", () => {
+    const swiper = new Swiper(".swiper", {
       grabCursor: true,
+      initialSlide: 1,
       centeredSlides: true,
       slidesPerView: "auto",
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 100,
-        modifier: 2,
-        slideShadows: true,
+      spaceBetween: 10,
+      speed: 1000,
+      freeMode: false,
+      mousewheel: {
+        thresholdDelta: 30,
       },
-      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      on: {
+        click() {
+          if (typeof this.clickedIndex !== "undefined") {
+            swiper.slideTo(this.clickedIndex);
+          }
+        },
+      },
     });
+  });
+  
+    particlesJS("particles-js", {
+      particles: {
+        number: {
+          value: 180,
+          density: {
+            enable: true,
+            value_area: 800,
+          },
+        },
+        color: {
+          value: "#fff",
+        },
+        shape: {
+          type: "circle",
+        },
+        opacity: {
+          value: 0.3,
+          random: false,
+          anim: {
+            enable: false,
+            speed: 4,
+            opacity_min: 0.1,
+            sync: false,
+          },
+        },
+        size: {
+          value: 4,
+          random: true,
+          anim: {
+            enable: true,
+            speed: 2,
+            size_min: 0.1,
+            sync: false,
+          },
+        },
+        line_linked: {
+          enable: false,
+        },
+        move: {
+          enable: true,
+          speed: 0.4,
+          direction: "right",
+          random: true,
+          straight: false,
+          out_mode: "out",
+          bounce: false,
+          attract: {
+            enable: false,
+            rotateX: 600,
+            rotateY: 1200,
+          },
+        },
+      },
+      retina_detect: true,
+    });
+ 
+  
+
+
+ 
 
 
 
