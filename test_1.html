@@ -13,6 +13,10 @@
     <title>Document</title>
  </head>
  <body>
+    <!-- Move to up bottom -->
+  <div class="scroll-button">
+    <a href="#home"><i class="ri-arrow-up-circle-line"></i></a>
+  </div>
     <section class="section1">
         <h1>Khaoula AYARI</h1>
         <h2>Developpeuse Web junior</h2>
@@ -21,21 +25,25 @@
     <nav>
         <div class="nav_header">
             <div class="nav_logo">
-                <a href="#">Khaoula<span>Ayari</span>.</a>
+                <a id="home">Khaoula<span>Ayari</span>.</a>
             </div>
             <div class="nav_menu_btn" id="menu-btn">
                 <span><i class="ri-menu-line"></i></span>
             </div>
         </div>
         <ul class="nav_links" id="nav-links">
-            <li><a href="#">A propos</a></li>
-            <li><a href="#">Parcours</a></li>
-            <li><a href="#">Web Dev</a></li>
-            <li><a href="#">Projets</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#a_propos">A propos</a></li>
+            <li><a href="#parcours">Parcours</a></li>
+            <li><a href="#web_dev">Web Dev</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <div class="media-icons">
+                <a href="#"><i class="ri-github-fill"></i></a>
+                <a href="#"><i class="ri-linkedin-box-fill"></i></a>
+              </div>
         </ul>
     </nav>
-    <header class="header_container">
+    <header class="header_container" id="a_propos">
         <div class="header_img">
             <img class="avatar" src="img/avatar2.jpg" alt="header">
         </div>
@@ -46,7 +54,7 @@
             <p class="p2">Ingénieure en qualité spécialisée dans le textile avec 8 ans d’expérience dans l’optimisation des processus et le contrôle qualité. Installée en Belgique depuis mars 2023, je me réoriente vers le domaine du développement web pour allier mes compétences analytiques à un secteur en pleine innovation. Actuellement en formation de Web Application Developer de 15 mois temps-plein, enthousiaste et motivée, je recherche un stage pratique pour mettre en application mes connaissances et contribuer à des projets concrets, tout en poursuivant ma montée en compétences dans le domaine du développement web.</p>
         </div>
     </header>
-    <section class="section_experiences">
+    <section class="section_experiences" id="parcours">
         <div class="experiences_content">
             <h2>Parcours</h2>
             <h3>Experiences</h3>
@@ -141,10 +149,38 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-slide">
+                        <div class="testbox">
+                            <div class="content_experience">
+                                <h4>BLABLABLA</h4><br>
+                                <p>Lorem ipsum dolor s ducimus nobis corrupti a inventore.</p>
+                                <div class="details">
+                                    <div class="imgBox">
+                                        <img src="img/gardeur.jpg">
+                                    </div>
+                                    <!-- <h3>Atelier Gardeur<br><span></span></h3> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="testbox">
+                            <div class="content_experience">
+                                <h4>BLABLABLA</h4><br>
+                                <p>Lorem ipsum dolor s ducimus nobis corrupti a inventore.</p>
+                                <div class="details">
+                                    <div class="imgBox">
+                                        <img src="img/gardeur.jpg">
+                                    </div>
+                                    <!-- <h3>Atelier Gardeur<br><span></span></h3> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <section class="section_web_dev">
+        <section class="section_web_dev" id="web_dev">
             <h2>Web dev</h2>
             <h3>Compétences</h3>
             <div class="container_web">
@@ -177,11 +213,10 @@
             </div>
 
         </section>  
-        <section class="section_projets">
+        <section class="section_projets" id="projets">
             <div class="header_projets">
-                <h4>Mes Projets</h4>
+                <h2>Mes Projets</h2>
             </div>
-            <div id="particles-js" class="particles"></div>
             <div class="container_projets">
                 
 
@@ -189,31 +224,54 @@
                     <div class="swiper">
                       <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                          <img src="img/img2.webp"/>
+                          <img src="img/white.jpg"/>
                           <p>Lucas</p>
                         </div>
+                        
                         <div class="swiper-slide">
-                            <img src="img/img2.webp"/>
+                            <img src="img/white.jpg"/>
                             <p>Mike</p>
                         </div>
+                        
+
                         <div class="swiper-slide">
-                            <img src="img/img2.webp"/>
+                            <img src="img/white.jpg"/>
                           <p>Max</p>
                         </div>
+
                         <div class="swiper-slide">
-                            <img src="img/img2.webp"/>
+                            <img src="img/white.jpg"/>
                           <p>Will</p>
                         </div>
+                        <!-- <p class="slide-text">Texte pour Will</p> -->
+
                       <div class="swiper-pagination"></div>
                     </div>
                   </div>
-
-
-
-        <section>
-            <h2>Contact</h2>
-
+                </div>
+                <div id="slide-text-container"> 
+                    <p id="slide-text"></p> 
+                </div>
         </section>
+
+
+
+    <section class="section_contact" id="contact">
+            <div class="contact-container">
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-left">
+                    <div class="contact-left-title">
+                        <h2>Contactez-moi</h2>
+                        <hr>
+                    </div>
+                    <input type="hidden" name="access_key" value="3da8aaf9-8b0a-4dfb-adb3-f6539a85071a">
+                    <input type="text" name="name" placeholder="Nom" class="contact-inputs" required>
+                    <input type="email" name="email" placeholder="email" class="contact-inputs" required>
+                    <textarea name="message" placeholder="Message" class="contact-inputs" required></textarea>
+                    <button type="submit">Envoyer <img src="" > </button> 
+                    </div>
+                </form>
+            </div>
+    </section>
         <footer>
             <p>&copy; Khaoula AYARI WAD24 Interface3</p>
         </footer>
@@ -222,3 +280,4 @@
         <script src="test.js"></script>
  </body>
  </html>
+ <!-- https://codepen.io/kmelichar/pen/xYxVxm  un lien pour la page demarrage tres tres jolie-->

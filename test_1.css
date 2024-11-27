@@ -20,6 +20,22 @@
    font-family: Cavolini;
 
 }
+/* Custom Scroll Bar CSS  https://codepen.io/254brady/pen/GRMvVaG*/ 
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: violet;
+}
+::-webkit-scrollbar-thumb {
+  background: yellow;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: green;
+}
+/* ///////////Section1///////// */
 .section1 {
     flex-direction: column;
     background-image: url("img/img1.jpg");
@@ -62,7 +78,8 @@ nav{
     isolation:isolate;
     width:100%;
     z-index: 9;
-    color: #E59934;
+    color: #E59934 ;
+    font-size: 1.5rem ;
 }
 .nav_header{
     padding: 1rem;
@@ -110,6 +127,9 @@ nav{
 .nav_links a:hover{
     color: #753188;
     font-weight: bold;
+}
+.media-icons{
+     font-size: 2rem;
 }
 /* .nav_btn{
     display: none;
@@ -564,15 +584,6 @@ nav{
   height: 100vh;
   overflow: hidden;
 }
-
-.particles {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
-
 .container {
   width: 80%;
 }
@@ -599,11 +610,7 @@ nav{
     inset: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(
-      120deg,
-      rgba(130, 13, 13, 0.8),
-      rgba(39, 8, 92, 0.8)
-    );
+    background:  #ecd1ff;
     mix-blend-mode: multiply;
     z-index: 1;
   }
@@ -660,7 +667,7 @@ nav{
   
   .swiper-pagination-bullet-active {
     width: 32px;
-    background-color: #6f1223;
+    background-color: #E59934;
     border-radius: 14px;
   }
   
@@ -714,6 +721,108 @@ nav{
   .logo img {
     width: 120px;
   }
+
+  #slide-text-container{
+    width: 40%;
+    margin: auto;
+    background:#f3f3f357 ;
+    border-radius: 4px;
+}
+/* /////////section contact/////////// */
+.section_contact{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  background: linear-gradient(to top, #E59934, #fff);
+}
+.contact-container{
+  height: 50vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.contact-left-title h2{
+  font-weight: 600;
+  color: #E59934;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+.contact-left-title hr{
+  border: none;
+  width: 120px;
+  height: 5px;
+  background-color: #E59934;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.contact-inputs{
+  width: 400px;
+  height: 50px;
+  border: none;
+  outline: none;
+  padding-left: 25px;
+  font-weight: 500;
+  color:black;
+  border-radius: 50px;
+}
+.contact-left textarea{
+  height: 140px;
+  padding-top: 15px;
+  border-radius: 20px;
+}
+.contact-inputs:focus{
+  border: 2px solid #E59934;
+}
+.contact-left button{
+  display: flex;
+  align-items: center;
+  padding: 15px 30px;
+  font-size: 16px;
+  color: #fff;
+  gap: 10px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  background-color: #753188;;
+  transition: all ease 0.3s
+}
+/* /////////section footer/////////// */
+footer{
+  
+    background:#753188;
+    width: 100%;
+    padding:15px 0;
+    text-align: center;
+    font-family: cascadia code;
+    font-size: 20px;
+    color: #fff;
+}
+/* Scroll To Top Button CSS  https://codepen.io/254brady/pen/GRMvVaG */
+.scroll-button a{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  color:white;
+  background:orange;
+  padding:10px 12px;
+  font-size: 50px;
+  border-radius: 50px;
+  box-shadow: rgba(0,0,0,0.15);
+  z-index: 1;
+  /* display:none; */
+}
+
+
+
+
+
   
   /* @media (max-width: 890px) {
     .logo {
@@ -885,6 +994,10 @@ nav{
   
  .logo img {
   width: 80px;
+  }
+  .contact-inputs{
+    width: 80vw;
+
   }
 }
 /* https://www.youtube.com/watch?v=E7mGqt7v3Uc section experiences*/

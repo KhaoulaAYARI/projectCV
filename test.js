@@ -22,7 +22,7 @@ ScrollReveal().reveal(".header_img img", {
 });
 ScrollReveal().reveal(".header_content h2", {
     ...scrollReavalOption,
-    delay: 500,
+    origin: "right",
 });
 ScrollReveal().reveal(".header_content .p1", {
     ...scrollReavalOption,
@@ -34,7 +34,22 @@ ScrollReveal().reveal(".header_content .p2", {
 });
 ScrollReveal().reveal(".experiences_content h2", {
     ...scrollReavalOption,
-    origin: "right",
+    origin: "left",
+});
+ScrollReveal().reveal(".experiences_content h3", {
+  ...scrollReavalOption,
+  origin: "left",
+  delay: 1000,
+});
+ScrollReveal().reveal(".coverflow-swiper", {
+  ...scrollReavalOption,
+  origin: "left",
+  delay: 1500,
+});
+ScrollReveal().reveal(".coverflow-swiper", {
+  ...scrollReavalOption,
+  origin: "left",
+  delay: 1500,
 });
 
 
@@ -80,70 +95,33 @@ document.addEventListener("DOMContentLoaded", () => {
         clickable: true,
       },
       on: {
-        click() {
-          if (typeof this.clickedIndex !== "undefined") {
-            swiper.slideTo(this.clickedIndex);
-          }
+        slideChange: function () { 
+          updateSlideText(this.activeIndex); 
         },
+        // click() {
+        //   if (typeof this.clickedIndex !== "undefined") {
+        //     swiper.slideTo(this.clickedIndex);
+        //   }
+        // },
       },
+
     });
+    function updateSlideText(index) { 
+      const texts = [ 
+        "Texte pour Lucas-Lucas Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempora aliquam, odit libero officia labore doloremque omnis nulla explicabo beatae praesentium mollitia? Adipisci explicabo nobis voluptas enim incidunt exercitationem!",
+         "Texte pour Mike-Mike Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempora aliquam, odit libero officia labore doloremque omnis nulla explicabo beatae praesentium mollitia? Adipisci explicabo nobis voluptas enim incidunt exercitationem!", 
+         "Texte pour Max-Max Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempora aliquam, odit libero officia labore doloremque omnis nulla explicabo beatae praesentium mollitia? Adipisci explicabo nobis voluptas enim incidunt exercitationem!", 
+         "Texte pour Will-Will Lorem ipsum dolor sit amet consectetur adipisicing elit. Error cumque tempora aliquam, odit libero officia labore doloremque omnis nulla explicabo beatae praesentium mollitia? Adipisci explicabo nobis voluptas enim incidunt exercitationem!" 
+        ];
+        const textElement = document.getElementById("slide-text"); 
+        textElement.textContent = texts[index];
+        } 
+    // Initialisation du texte au démarrage 
+    updateSlideText(swiper.initialSlide); 
   });
+
   
-    particlesJS("particles-js", {
-      particles: {
-        number: {
-          value: 180,
-          density: {
-            enable: true,
-            value_area: 800,
-          },
-        },
-        color: {
-          value: "#fff",
-        },
-        shape: {
-          type: "circle",
-        },
-        opacity: {
-          value: 0.3,
-          random: false,
-          anim: {
-            enable: false,
-            speed: 4,
-            opacity_min: 0.1,
-            sync: false,
-          },
-        },
-        size: {
-          value: 4,
-          random: true,
-          anim: {
-            enable: true,
-            speed: 2,
-            size_min: 0.1,
-            sync: false,
-          },
-        },
-        line_linked: {
-          enable: false,
-        },
-        move: {
-          enable: true,
-          speed: 0.4,
-          direction: "right",
-          random: true,
-          straight: false,
-          out_mode: "out",
-          bounce: false,
-          attract: {
-            enable: false,
-            rotateX: 600,
-            rotateY: 1200,
-          },
-        },
-      },
-      retina_detect: true,
-    });
+    
  
   
 
